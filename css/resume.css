@@ -1,0 +1,219 @@
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+
+  background-color: #fff;
+  color: #0C1221;
+}
+
+#intro {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); /* or try 50% */
+  font-size: 28px;
+  display: inline-block;
+  width: 50vw;
+}
+
+#intro h2 {
+  font-size: 38px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+section {
+  padding: 20px;
+  /*
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  */
+}
+
+.title {
+  font-size: 30px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 60px;
+  text-decoration-color: black;
+}
+
+h1 a {
+  color: black;
+}
+
+h2 {
+  font-weight: bolder;
+  color: #000;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  padding-left: 0.5em;
+}
+
+section.s1 {
+  background-color: #FFDBC1;
+  height: 90vh;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+section.s2 {
+  background-color: #FFBE8E;
+}
+
+section.s3 {
+  background-color: #FFA969;
+}
+
+section.s4 {
+  background-color: #FF9A4F;
+}
+
+section.s5 {
+  background-color: #FF8A33;
+}
+
+a:link {
+  text-decoration: none;
+}
+a {
+  color: #60abec;
+}
+
+a:hover {
+  color: #3877be;
+}
+
+i {
+  color: #60abec;
+  font-size: 30px;
+}
+
+i:hover {
+  color: #3877be;
+  /*position: relative;
+  bottom:0;
+  -webkit-animation:bounce 0.7s infinite;
+  */
+}
+
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 15px;
+}
+
+footer p {
+  margin: 0px;
+}
+
+#intro {
+  display: inline-block;
+  width: 50vw;
+}
+
+#upBtn {
+  display: none; /* Hidden by default */
+  height:51px;
+  width:50px;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+}
+
+#upBtn:hover {
+  background-color: rgb(255, 248, 240);
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+  border-radius: 2em;
+}
+
+@media (max-width: 950px) {
+  .photos {
+    width:100%;
+    height:auto;
+    border-radius:25px;
+  }
+
+  #intro {
+    text-align:left;
+    width:80vw;
+  }
+}

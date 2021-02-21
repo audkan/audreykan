@@ -1,0 +1,405 @@
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+
+  background-color: #fff;
+  color: #0C1221;
+}
+
+.title {
+  font-size: 30px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 60px;
+  text-decoration-color: black;
+}
+
+h1 a {
+  color: black;
+}
+
+h2 {
+  font-weight: bolder;
+  color: #000;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+p {
+  padding-left: 0.5em;
+}
+
+section.s1 {
+  background-color: #FFDBC1;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+section.s2 {
+  background-color: #FFBE8E;
+}
+
+section.s3 {
+  background-color: #FFA969;
+}
+
+a:link {
+  text-decoration: none;
+}
+a {
+  color: #60abec;
+}
+
+a:hover {
+  color: #3877be;
+}
+
+
+footer {
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 15px;
+}
+
+footer p {
+  margin: 0px;
+}
+
+
+#upBtn {
+  display: none; /* Hidden by default */
+  height:51px;
+  width:50px;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+}
+
+#upBtn:hover {
+  background-color: rgb(255, 248, 240);
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/**************************************************
+*
+*                 PUNCH NEEDLE                    *
+*
+**************************************************/
+
+#punch-gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 5vw);
+  grid-gap: 15px;
+}
+
+/* abstract mug rugs */
+.punch-gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* daliruma */
+.punch-gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+/* icarus */
+.punch-gallery__item--3 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+/* mugrug grid */
+.punch-gallery__item--4 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* mug rug smiley */
+.punch-gallery__item--5 {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+/* persistence of yarn */
+.punch-gallery__item--6 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+/* smiley mug rugs */
+.punch-gallery__item--7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+/* sutro all */
+.punch-gallery__item--8 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+/* sutro karl */
+.punch-gallery__item--9 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+/**************************************************
+*
+*                    CERAMICS                     *
+*
+**************************************************/
+
+#ceramics-gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 5vw);
+  grid-gap: 15px;
+}
+
+/* all in */
+.ceramics-gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* aud shapes */
+.ceramics-gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+/* drip-moo */
+.ceramics-gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+/* hanging-double */
+.ceramics-gallery__item--6 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* in-line */
+.ceramics-gallery__item--9 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+/* magnets */
+.ceramics-gallery__item--10 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* palettes */
+.ceramics-gallery__item--13 {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+/* seaweed */
+.ceramics-gallery__item--15 {
+  grid-column-start: 7;
+  grid-column-end:9;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+/* sepia mini */
+.ceramics-gallery__item--16 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+/* sepia vase clouds */
+.ceramics-gallery__item--17 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+/* sepia vase sutro */
+.ceramics-gallery__item--18 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+/* sf snow planter ggb */
+.ceramics-gallery__item--19 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+/* sculptures */
+.ceramics-gallery__item--20 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+/* sf snow vse*/
+.ceramics-gallery__item--22 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+/* tangelo */
+.ceramics-gallery__item--24 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+
+
+/**************************************************
+*
+*                 ILLUSTRATION                    *
+*
+**************************************************/
+
+#illustration-gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 5vw);
+  grid-gap: 15px;
+}
+
+/* nana */
+.illustration-gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* cbd */
+.illustration-gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+/* chinaton */
+.illustration-gallery__item--3 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+/* clocks */
+.illustration-gallery__item--4 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* dora maar */
+.illustration-gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 12;
+}
+
+/* downtown */
+.illustration-gallery__item--6 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+/* darm couple */
+.illustration-gallery__item--7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+/* hunny */
+.illustration-gallery__item--8 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+/* freeway */
+.illustration-gallery__item--9 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 6;
+}
